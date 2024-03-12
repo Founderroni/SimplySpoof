@@ -20,9 +20,6 @@ namespace SimplySpoof
                 if (File.Exists(McpeDirectory + "clientId.txt"))
                     File.WriteAllText(McpeDirectory + "clientId.txt", RandomString(19, false, true));
 
-                if (File.Exists(McpeDirectory + "telemetry_info.json"))
-                    File.Delete(McpeDirectory + "telemetry_info.json");
-
                 string[] lines = File.ReadAllLines(OptionsFile);
                 for (int i = 0; i < lines.Length; i++)
                 {
